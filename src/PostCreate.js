@@ -7,7 +7,7 @@ const PostCreate = () => {
   const onSubmit = async (event) => {
     event.preventDefault();
 
-    await axios.post(`${process.env.REACT_APP_BACKEND_URL}/posts`, {
+    await axios.post(`${process.env.REACT_APP_BACKEND_URL}/posts/create`, {
       title: title,
     });
 
